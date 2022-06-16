@@ -7,7 +7,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="css/reset.css" />
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 </head>
 <body>
@@ -22,14 +24,16 @@
     </nav>
   </header>
   <main>
-    <div class="main-hero">
-      <img id="hero-image" src="images/illustration-intro.png" alt="two people putting paper into a folder" />
-      <h2>All your files in one secure location, accessible anywhere.</h2>
-      <div>
-        Fylo stores all your most important files in one secure location. Access them wherever 
-        you need, share and collaborate with friends family, and co-workers.
+    <div class="main-hero-wrapper">
+      <div class="main-hero">
+        <img id="hero-image" src="images/illustration-intro.png" alt="two people putting paper into a folder" />
+        <h2>All your files in one secure location, accessible anywhere.</h2>
+        <div>
+          Fylo stores all your most important files in one secure location. Access them wherever 
+          you need, share and collaborate with friends family, and co-workers.
+        </div>
+        <a href="#login">Get Started</a> 
       </div>
-      <a href="#login">Get Started</a> 
     </div>
     <ul class="main-features">
       <li>
@@ -71,11 +75,15 @@
       <div>
         Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
         storage needs.
-      
+      </div>
+      <div>
         Securely share files and folders with friends, family and colleagues for live collaboration. No email 
         attachments required.
       </div>
-      <a href="#how-we-work">See how Fylo works</a>
+      <span>
+        <a href="#how-we-work">See how Fylo works</a>
+        <img id="icon-arrow" src="images/icon-arrow.svg" alt="arrow icon" />
+      </span>
     </div>
     <div class="main-testimonials-container">
       <img id="left-quote-img" src="images/bg-quotes.png" alt="image of a left quote" />
@@ -86,7 +94,7 @@
             become a well-oiled collaboration machine.
           </div>
           <div>
-            <img id="testimonial-1-img" src="images/profile-1.jpg" alt="Satish Patel pfp" />
+            <img class="testimonial-profile-img" src="images/profile-1.jpg" alt="Satish Patel pfp" />
             <div>Satish Patel</div>
             <div>Founder & CEO, Huddle</div>
           </div>
@@ -97,7 +105,7 @@
             become a well-oiled collaboration machine.
           </div>
           <div>
-            <img id="testimonial-2-img" src="images/profile-2.jpg" alt="Bruce McKenzie pfp" />
+            <img class="testimonial-profile-img" src="images/profile-2.jpg" alt="Bruce McKenzie pfp" />
             <div>Bruce McKenzie</div>
             <div>Founder & CEO, Huddle</div>
           </div>
@@ -108,7 +116,7 @@
             become a well-oiled collaboration machine.
           </div>
           <div>
-            <img id="testimonial-3-img" src="images/profile-3.jpg" alt="Iva Boyd pfp" />
+            <img class="testimonial-profile-img" src="images/profile-3.jpg" alt="Iva Boyd pfp" />
             <div>Iva Boyd</div>
             <div>Founder & CEO, Huddle</div>
           </div>
